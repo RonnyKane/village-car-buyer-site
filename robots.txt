@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /thank-you.html
 
-Sitemap: https://www.villagecarbuyer.com/sitemap.xml
+Sitemap: https://villagecarbuyer.com/sitemap.xml
