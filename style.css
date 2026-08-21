@@ -1051,15 +1051,19 @@ p { margin-bottom: 1rem; font-size: 1.05rem; }
   border-bottom: 4px solid var(--green);
 }
 .local-banner {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 3rem;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.local-banner-content {
+  width: 100%;
 }
 .local-banner-content h2 {
   font-family: var(--font-head);
   color: var(--green-dark);
-  line-height: 1.3;
+  line-height: 1.2;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-bottom: 1.25rem;
 }
 .local-stats {
   display: flex;
@@ -1088,15 +1092,20 @@ p { margin-bottom: 1rem; font-size: 1.05rem; }
   margin-top: 0.3rem;
   line-height: 1.3;
 }
-.team-photo {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
-}
 .local-right {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
+}
+.team-photo {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
 }
 @media (max-width: 768px) {
   .local-banner {
